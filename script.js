@@ -617,7 +617,7 @@ class App extends Component {
         const cn = s.codename.trim() || (adj[Math.floor(Math.random() * adj.length)] + ' ' + nouns[Math.floor(Math.random() * nouns.length)]);
         this.setState({ authBurst: false, home: s.obCountry, country: s.obCountry, selected: s.obCountry, counts: counts, codename: cn, doneSet: {}, onboarding: true, step: 2, pw: '', authTried: false });
       } else {
-        this.setState({ authBurst: false, loggedIn: true, view: 'home', tab: 'home', pw: '', authTried: false });
+        this.setState({ authBurst: false, loggedIn: true, view: 'home', tab: 'home', pw: '', authTried: false, codename: s.codename.trim() || (adj[Math.floor(Math.random() * adj.length)] + ' ' + nouns[Math.floor(Math.random() * nouns.length)]) });
       }
       toTop();
     };
@@ -835,7 +835,7 @@ class App extends Component {
       loggedIn: s.loggedIn,
       loggedOut: !s.loggedIn,
       email: s.email,
-      userName: s.codename.trim() || nameFrom(s.email),
+      userName: s.codename.trim() || 'Friend',
       initial: (s.codename.trim() || nameFrom(s.email)).charAt(0).toUpperCase(),
       codename: s.codename,
       setCodename: (e) => this.setState({ codename: e.target.value }),
