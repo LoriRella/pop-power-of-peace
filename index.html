@@ -51,6 +51,10 @@
 .bfly-sci{position:absolute;right:0;top:38px;z-index:30;width:280px;padding:14px 18px;border-radius:24px;background:#1d1b3c;color:#eceafb;font-size:14px;line-height:1.5;box-shadow:0 18px 40px -18px rgba(29,27,60,.6);opacity:0;transform:translateY(-4px);pointer-events:none;transition:opacity .2s,transform .2s}
 .bfly-more:hover .bfly-sci,.bfly-more:focus-within .bfly-sci{opacity:1;transform:none}
 #top{border-radius:56px !important}#top::before,#top::after{border-radius:56px !important}
+.hero-eyebrow{margin:0 0 10px !important}
+.hero-story{margin:0 0 26px;max-width:520px;font-family:Fraunces,Georgia,serif;font-style:italic;font-size:clamp(18px,1.6vw,22px);line-height:1.45;color:#3b2f6e}
+.hero-story-em{font-weight:600;background:linear-gradient(90deg,#d94fa8,#8a4fe8,#3f86e0,#22b38c,#d9a020,#d94fa8);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:iriShift 7s ease-in-out infinite}
+.hero-hl{position:relative;display:inline-block;padding:0 .18em;margin-left:-.18em;border-radius:.4em;background:linear-gradient(100deg,rgba(255,182,224,.75),rgba(240,170,230,.45) 60%,rgba(214,190,255,.35));box-shadow:0 0 40px 6px rgba(255,170,220,.35)}
 .hero-numlab{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:500;color:#5d5a80}
 </style>
 </head>
@@ -506,14 +510,9 @@
 <section id="top" style="max-width: 1280px; margin: 0 auto; padding: 8px 32px 80px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center">
 <div class="hero-l">
 <p class="hero-eyebrow"><span>Inspired by the butterfly effect</span></p>
-<h1 class="hero-h1">One small act.<span class="hero-iri">Ripples around<br>the world.</span></h1>
+<p class="hero-story">As small as a butterfly flapping its wings, one act of kindness can ripple around the world and <span class="hero-story-em">spark monumental change.</span></p>
+<h1 class="hero-h1"><span class="hero-hl">One small act.</span><span class="hero-iri">Ripples around<br>the world.</span></h1>
 <p class="hero-sub">Do one small act of peace. Watch it light up your country, and the world.</p>
-<figure class="bfly-story">
-<svg class="bfly-ico" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="bfg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0a6d8"/><stop offset=".45" stop-color="#b9a6f5"/><stop offset=".75" stop-color="#8fc8f5"/><stop offset="1" stop-color="#9ee8cf"/></linearGradient></defs><path fill="url(#bfg)" d="M31 30C27 18 18 8 9 9 2 10 3 22 9 27c4 4 11 5 17 4-7 2-13 6-13 13 0 7 8 10 13 4 3-4 5-10 5-15zm2 0c4-12 13-22 22-21 7 1 6 13 0 18-4 4-11 5-17 4 7 2 13 6 13 13 0 7-8 10-13 4-3-4-5-10-5-15z"/><rect x="31" y="22" width="2" height="22" rx="1" fill="#5b3fd6"/></svg>
-<blockquote>A butterfly flaps its wings on one side of the world, and that tiny breath of air sets off a chain of changes that grows into something powerful, far away. That's the butterfly effect.</blockquote>
-<figcaption>A kind word, an open hand, a moment of courage: every small act of peace is a flap of the wings.</figcaption>
-<span class="bfly-more"><button type="button" class="bfly-info" aria-label="Where does the butterfly effect come from?" aria-describedby="bfly-sci">i</button><span id="bfly-sci" role="tooltip" class="bfly-sci">The idea comes from 1960s weather science, when researchers found that a change smaller than a thousandth in a forecast's starting numbers could completely transform the weather it predicted weeks later.</span></span>
-</figure>
 <p class="hero-stat"><span class="hero-num">{{ totalStr }}</span><span class="hero-numlab"><span class="live" style="width: 8px; height: 8px; border-radius: 50%; background: #3fbf94"></span>acts of peace and counting</span></p>
 <div style="margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px">
 <button type="button" data-on-click="showMission" class="btn-iri" style="font: inherit; font-size: 17px; font-weight: 600; color: #1d1b3c; border: 0; cursor: pointer; padding: 18px 32px; border-radius: 999px; background: linear-gradient(90deg, #f0a6d8, #b9a6f5 30%, #8fc8f5 55%, #9ee8cf 78%, #f3e9a0); box-shadow: 0 14px 34px -12px rgba(155, 125, 235, 0.65)">Get my next mission</button>
